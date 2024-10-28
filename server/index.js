@@ -17,6 +17,9 @@ app.use((err, req, res, next) => {
 });
 
 app.use('/', routes)
+app.get('/', (req, res) => {
+    res.send('OK');
+});
 
 // Start the server
 app.listen(port, () => {
